@@ -1,4 +1,4 @@
-FROM gerasim13/node-firefox
+FROM gerasim13/selenium-firefox
 MAINTAINER Pavel Litvinenko <gerasim13@gmail.com>
 #=====
 # VNC

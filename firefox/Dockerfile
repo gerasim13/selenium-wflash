@@ -1,4 +1,4 @@
-FROM gerasim13/selenium-node-base
+FROM gerasim13/selenium-node
 MAINTAINER Pavel Litvinenko <gerasim13@gmail.com>
 #=========
 # Firefox
