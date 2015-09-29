@@ -1,4 +1,6 @@
 FROM selenium/node-chrome
+
+USER root
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe restricted multiverse" > /etc/apt/sources.list
 RUN apt-get update && \
     apt-get upgrade && \
@@ -18,3 +20,5 @@ RUN mkdir /usr/lib/flash-plugin/ && \
     cp libflashplayer.so /usr/lib/firefox/browser/plugins/ && \
     chmod 775 /usr/lib/flash-plugin/libflashplayer.so && \
     chmod 775 /usr/lib/firefox/browser/plugins/libflashplayer.so
+
+USER seluser
