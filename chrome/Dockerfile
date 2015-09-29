@@ -1,4 +1,4 @@
-FROM selenium/node-chrome-debug
+FROM selenium/node-chrome
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe restricted multiverse" > /etc/apt/sources.list
 RUN apt-get update && \
     apt-get upgrade && \
