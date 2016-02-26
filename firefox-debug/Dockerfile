@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt-get autoclean && \
     apt-get autoremove
 RUN apt-get install -y ubuntu-restricted-extras
+RUN apt-get install --only-upgrade -y firefox
 
 COPY install_flash_player_11_linux.x86_64.tar.gz install_flash_player_11_linux.x86_64.tar.gz
 RUN mkdir ~/install_flash_player_11_linux && tar -zxvf install_flash_player_11_linux.x86_64.tar.gz -C ~/install_flash_player_11_linux

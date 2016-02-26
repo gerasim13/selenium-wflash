@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt-get autoclean && \
     apt-get autoremove
 RUN apt-get install -y ubuntu-restricted-extras
+RUN apt-get install --only-upgrade -y firefox
 
 # RUN add-apt-repository ppa:nilarimogard/webupd8
 # RUN apt-get install -y pepperflashplugin-nonfree freshplayerplugin
