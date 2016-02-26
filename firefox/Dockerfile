@@ -9,6 +9,11 @@ RUN apt-get update && \
     apt-get autoremove
 RUN apt-get install -y ubuntu-restricted-extras
 
+# RUN add-apt-repository ppa:nilarimogard/webupd8
+# RUN apt-get install -y pepperflashplugin-nonfree freshplayerplugin
+# RUN update-pepperflashplugin-nonfree --install
+# RUN ln /opt/google/chrome/PepperFlash/libpepflashplayer.so
+
 COPY install_flash_player_11_linux.x86_64.tar.gz install_flash_player_11_linux.x86_64.tar.gz
 RUN mkdir ~/install_flash_player_11_linux && tar -zxvf install_flash_player_11_linux.x86_64.tar.gz -C ~/install_flash_player_11_linux
 RUN mkdir /usr/lib/flash-plugin/ && \
