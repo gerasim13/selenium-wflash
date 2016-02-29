@@ -27,4 +27,4 @@ RUN mkdir /usr/lib/flash-plugin/ && \
     chmod 775 /usr/lib/flash-plugin/libflashplayer.so && \
     chmod 775 /usr/lib/firefox/browser/plugins/libflashplayer.so
 
-USER seluser
+# USER seluser
