@@ -1,4 +1,4 @@
-FROM selenium/node-firefox-debug:2.48.2
+FROM selenium/node-firefox-debug
 
 USER root
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe restricted multiverse" > /etc/apt/sources.list
